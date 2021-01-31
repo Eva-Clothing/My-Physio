@@ -1,0 +1,21 @@
+{
+    "manifest_version" : 2,
+    "version": "1.0.0",
+    "name":"My Physio",
+    "description": "An all in one student utility extension!",
+    "description": "A chrome extension",
+    "icons":{
+        "128":"icons/icon128.png",
+        "48" :"icons/icon48.png",
+        "16":"icons/icon16.png"
+    },
+    "browser_action":{
+        "default_popup":"popup.html",
+        "default_icon":"icons/icon16.png"
+    },
+    "background":{
+        "scripts":["background.js"],
+        "persistent": false
+    },
+    "permissions": ["tabs","activeTab","declarativeContent", "storage", "alarms", "notifications"] 
+}

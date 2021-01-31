@@ -1,0 +1,284 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+body
+{
+  color:white;
+  border-style: none;
+  text-align: center;
+  font-family: 'DM Mono', monospace;  
+  background: linear-gradient(45deg,  #000000, #230b61);
+  
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+          text-transform: uppercase;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h3 {
+text-align: center;
+  margin: 0 15px 15px 15px;
+  font-size: 16px;
+  font-family: 'DM Mono', monospace;
+}
+
+h5 {
+  text-align: center;
+  margin: 0 15px 15px 15px;
+  font-size: 22px;
+  color: #f7f2f2;
+  text-shadow:white;
+  font-family: 'DM Mono', monospace;
+}
+
+h4 {
+text-align: center;
+  margin: 5px;
+  color: whitesmoke;
+  font-size: 13px;
+  font-family: 'DM Mono', monospace;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  padding: 2%;
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+}
+
+.portal_logo {
+
+    height: 100px;
+    width: 100px;
+    /*align-self: center;*/
+    font-family: 'DM Mono', monospace;
+}
+
+.user {
+  text-align: center;
+  color: white;
+  font-family: 'DM Mono', monospace;
+}
+
+.buttons img {
+  height: 35px;
+  width: 35px;
+  padding: 4px 4px;
+  position: relative;
+  /*top: 5px;*/
+  font-family: 'DM Mono', monospace;
+}
+
+.buttons-container {
+  width: 500px;
+  height: 100px;
+  background-size: 100%; 
+  font-family: 'DM Mono', monospace;
+}
+
+.buttons {
+  margin: 0;
+  list-style: none;
+  padding-top: 15px;
+  font-family: 'DM Mono', monospace;
+}
+
+.buttons a {
+  font: 15px DM Mono, monospace, 
+  color: Black;
+  text-decoration: none;
+  display: block;
+  line-height: 40px;
+  font-family: 'DM Mono', monospace;
+}
+
+.buttons>li {
+  position: relative;
+  left: 0.5px;
+  float: left;
+  width: 54px;
+  font-family: 'DM Mono', monospace;
+}
+
+.buttons>li:hover {
+  border-radius: 20%;
+  background-color: #d9d9d9;
+  transition: background-color 0.2s;
+  font-family: 'DM Mono', monospace;
+}
+
+.buttons li:hover>ul {
+  display: inline;
+  height: auto;
+  opacity: 1;
+  font-family: 'DM Mono', monospace;
+}
+
+.dropdown-content {
+
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 160px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: 'DM Mono', monospace;
+}
+
+.dropdown-content>li {
+  position: relative;
+  height: 40px;
+  background-color: white;
+  transition: background-color 0.2s;
+  font-family: 'DM Mono', monospace;
+}
+
+.dropdown-content>li:hover {
+  background-color: #d9d9d9;
+  transition: background-color 0.2s;
+  font-family: 'DM Mono', monospace;
+}
+
+.second-dropdown-content {
+  position: absolute;
+  top: 0;
+  right: -120px;
+  width: 120px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity linear 0.15s;
+  font-family: 'DM Mono', monospace;
+}
+
+.second-dropdown-content>li {
+  height: 40px;
+  background-color: white;
+  font-family: 'DM Mono', monospace;
+}
+
+.second-dropdown-content>li:hover {
+  background-color: #d9d9d9;
+  transition: background-color 0.2s;
+  font-family: 'DM Mono', monospace;
+}
+
+.show {
+  display: block;
+  font-family: 'DM Mono', monospace;
+}
+.btnGroup button {
+    background: none;
+    border: 2px solid white;
+    color: #00FFFF;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 100%;
+    font-family: 'DM Mono', monospace;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.btnGroup button:hover {
+    background: white;
+    transition: 0.3s;
+}
+.reminderText {
+    margin: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'DM Mono', monospace;
+    font-size: 15px;
+    font-weight: bold;
+    color: #00FFFF;
+}
+
+.reminderHeader {
+    font-family: 'DM Mono', monospace;
+    /*font-size: x-large;*/
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    margin: auto;
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.resetExerciseButton button {
+    background: none;
+    border: 4px solid #00FFFF;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+    width: 50%;
+     font-family: 'DM Mono', monospace;
+    font-size: large;
+    font-weight: bold;
+    color: #00FFFF;
+    border-radius: 10px;
+}
+
+.resetExerciseButton button:hover {
+    background: white;
+    transition: 0.3s;
+}
+
+.resetExerciseButton {
+    padding: 20px 0px;
+}
+
+.exerciseTitle {
+    text-align: center;
+      font-family: 'DM Mono', monospace;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.exerciseTimerText {
+    text-align: center;
+      font-family: 'DM Mono', monospace;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+  
+
+}
